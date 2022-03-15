@@ -1,9 +1,7 @@
-name: 'Get the latest release upload url, tag, date'
-description: 'Helps you get the latest release info for your repo including upload url, tag, date'
+name: 'Get the latest release and send to slack web hook'
+description: 'Helps you get the latest release info for your repo and send to slack webhook'
 author: 'GitHub'
 outputs:
-  id:
-    description: 'The id of the release'
   html_url:
     description: 'The url users can navigate to in order to view the release'
   upload_url:
@@ -12,10 +10,8 @@ outputs:
     description: 'The name of the tag linked with the release'
   name:
     description: 'The name of the release'
-  created_at:
-    description: 'The creation date of the release'
-  draft:
-    description: 'The draft of the release'
+  body:
+    description: 'The description of the release'
 runs:
   using: 'node12'
   main: 'dist/index.js'
