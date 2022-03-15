@@ -1,4 +1,4 @@
-# GitHub Action to Help Getting The Latest Release Info
+# GitHub Action to Help Getting The Latest Release Info And Send To Slack Webhook
 
 Add this step in your workflow file
 
